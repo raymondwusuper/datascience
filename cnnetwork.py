@@ -76,7 +76,7 @@ from mnist import MNIST
 mndata = MNIST('data/')
 mndata.gz = False
 images, labels = mndata.load_testing() #for some reason, after running the command sequence cd python-mnist and ./bin/mnist_get_data.sh* the data still doesn't appear like it should
-                                       #this is a problem with my current computer and im sure it will work on another device.
+                                       #this is a problem with my current computer and im pretty sure it will work on another device.
 
 network = CNN(8)
 pool = maxPool()
