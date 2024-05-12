@@ -171,7 +171,6 @@ softmax = softMax(13*13*8, 10)
 def feed(image, label):
     #passes the cnn and calculates loss
     #image is a 2d np array, label is a digit
-
     out = network.feed((image / 255) - 0.5)
     out = pool.feed(out)
     out = softmax.feed(out)
@@ -193,7 +192,7 @@ def train(image, label, learning_rate=.005):
     grad = softmax.backprop(grad, learning_rate)
     grad = pool.backprop(grad)
     grad = network.backprop(grad, learning_rate)
-
+    #note that the previous line sets grad to None. Once we run it through the network to train it, we dont need grad anymore
     return loss, acc
 
 for epoch in range(3):
