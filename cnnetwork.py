@@ -1,3 +1,5 @@
+#This convolutional neural network is built from scratch, and does not use any specific ML libraries like tensorflow. 
+#Therefore, albeit the network is relatively inefficient, it performs rather well, yielding around an 80-90% accuracy when tested with mnist data.
 import numpy as np
 #class using 3x3 filters
 class CNN:
