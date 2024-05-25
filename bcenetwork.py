@@ -103,7 +103,7 @@ all_realY = np.array([1, 0, 1, 0, 1, 0])
 network = NN()
 network.train(data, all_realY)
 
-daniel = np.array([70, 15])
+daniel = np.array([70, 15]) #Input your own data here
 kyle = np.array([10, 1])
 print("Daniel: %.3f" % network.feed(daniel))
 print("Kyle: %.3f" % network.feed(kyle)) 
