@@ -97,6 +97,7 @@ class NN:
     
 #define example data set 
 #predict whether or not daniel's girlfriend is cheating on him based on text frequency and other
+#all real life data values and outputs instead of online survey data to maximize accuracy
 data = np.array([[90, 6], [10, 2], [50, 10], [2, 0], [100, 24], [0, 0]])
 all_realY = np.array([1, 0, 1, 0, 1, 0])
 
